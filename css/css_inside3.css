@@ -1,0 +1,263 @@
+@charset "utf-8";
+*{
+	margin:0;
+	padding:0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;	
+}
+img{border:0;}
+.cl{clear:both;}
+.warning{color:red;}
+a{
+  text-decoration:none; 
+  color:#000; 
+  outline: none; /* for Firefox Google Chrome  */
+  behavior:expression(this.onFocus=this.blur()); /* for IE */
+}
+a:hover{}
+
+
+body{
+	margin:0 auto;
+	font-size:100%;
+	line-height:1.125em;
+	position:relative;
+	font-family: Open Sans, Arial, Helvetica, sans-serif, 微軟正黑體;
+	background-color: #FBEDCA;
+	background-image:url(../images/about_images/bg_about.png); background-repeat:repeat-x;
+}
+
+
+#header{margin: auto;width: 960px; height:120px; position:relative;background-repeat: repeat-x;background-position:3px bottom;}
+#logo{
+	background-image: url(../images/Logo_.png);
+	background-repeat: no-repeat;
+	float: left;
+	height: 82px;
+	width: 249px;
+	position:absolute;
+	z-index:1;
+}
+#logo a{display:block;	height: 82px;	width: 249px;}
+#logo h2{	visibility: hidden;}
+
+
+
+.menu{
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	z-index: 1;
+}
+
+.m_li0,.m_li1,.m_li2,.m_li3,.m_li4,.m_li5 {	display: block; float:right;  margin:0 1px;}
+.m_li0 a p,.m_li1 a p,.m_li2 a p,.m_li3 a p,.m_li4 a p,.m_li5 a p { font-size:18px; font-weight:bold; line-height:28px; color:#414141;}
+
+.m_li0 a {
+	display: block;
+	background-image: url(../images/menu_00.png);
+	background-repeat:repeat-x;
+	background-color:#FFF;
+	height: 89px;
+	width: 110px;
+	padding-top:22px;
+
+-webkit-border-bottom-right-radius:40px; /*右下角*/
+-webkit-border-bottom-left-radius:40px; /*左下角*/
+border-bottom-left-radius:40px; /*左下角*/
+border-bottom-right-radius:40px; /*右下角*/
+border:solid #53A0CA 1px;	
+}
+.m_li1 a{
+	display: block;
+	background-image: url(../images/menu_01.png);
+	background-repeat:repeat-x;
+	background-color:#FFF;
+	height: 89px;
+	width: 110px;
+	padding-top:22px;
+
+-webkit-border-bottom-right-radius:25px; /*右下角*/
+-webkit-border-bottom-left-radius:25px; /*左下角*/
+border-bottom-left-radius:25px; /*左下角*/
+border-bottom-right-radius:25px; /*右下角*/	
+border:solid #CB7DA8 1px;		
+}
+.m_li2 a{
+	display: block;
+	background-image: url(../images/menu_02.png);
+	background-repeat:repeat-x;
+	background-color:#FFF;
+	height: 89px;
+	width: 110px;
+	padding-top:22px;
+
+-webkit-border-bottom-right-radius:25px; /*右下角*/
+-webkit-border-bottom-left-radius:25px; /*左下角*/
+border-bottom-left-radius:25px; /*左下角*/
+border-bottom-right-radius:25px; /*右下角*/	
+border:solid #A68040 1px;	
+}
+.m_li3 a{
+	display: block;
+	background-image: url(../images/menu_04.png);
+	background-repeat:repeat-x;
+	background-color:#FFF;
+	height: 89px;
+	width: 110px;
+	padding-top:22px;
+
+-webkit-border-bottom-right-radius:25px; /*右下角*/
+-webkit-border-bottom-left-radius:25px; /*左下角*/
+border-bottom-left-radius:25px; /*左下角*/
+border-bottom-right-radius:25px; /*右下角*/	
+border:solid #4DB37A 1px;
+}
+.m_li4 a{
+	display: block;
+	background-image: url(../images/menu_03.png);
+	background-repeat:repeat-x;
+	background-color:#FFF;
+	height: 89px;
+	width: 110px;
+	padding-top:22px;
+
+-webkit-border-bottom-right-radius:25px; /*右下角*/
+-webkit-border-bottom-left-radius:25px; /*左下角*/
+border-bottom-left-radius:25px; /*左下角*/
+border-bottom-right-radius:25px; /*右下角*/	
+border:solid #009997 1px;	
+}
+.m_li5 a{
+	display: block;
+	background-image: url(../images/menu_05.png);
+	background-repeat:repeat-x;
+	background-color:#FFF;
+	height: 89px;
+	width: 110px;
+	padding-top:22px;
+
+-webkit-border-bottom-right-radius:25px; /*右下角*/
+-webkit-border-bottom-left-radius:25px; /*左下角*/
+border-bottom-left-radius:25px; /*左下角*/
+border-bottom-right-radius:25px; /*右下角*/	
+border:solid #CEA5FF 1px;	
+}
+.m_li0 a:hover{
+
+	border-bottom-width: 3px;
+	border-bottom-style: solid;
+	border-bottom-color: #2b7daa;	
+}
+.m_li1 a:hover{
+	border-bottom-width: 3px;
+	border-bottom-style: solid;
+	border-bottom-color: #aa2b71;	
+}
+.m_li2 a:hover{
+	border-bottom-width: 3px;
+	border-bottom-style: solid;
+	border-bottom-color: #996000;		
+}
+.m_li3 a:hover{
+	border-bottom-width: 3px;
+	border-bottom-style: solid;
+	border-bottom-color: #009944;
+}
+.m_li4 a:hover{
+	border-bottom-width: 3px;
+	border-bottom-style: solid;
+	border-bottom-color: #009997;		
+}
+.m_li5 a:hover{
+	border-bottom-width: 3px;
+	border-bottom-style: solid;
+	border-bottom-color: #CEA5FF;
+}
+
+
+
+
+
+
+
+#wrapper{width:960px;min-height:1000px;height:inherit; margin:auto; position:relative;}
+
+
+.displacements{ margin:20px 0 20px 120px; line-height:30px; letter-spacing: 3px; position:relative;font-size:1em;}
+.displacements2{ margin:0px 0 0px 15px; line-height:30px; letter-spacing: 3px;font-size:1em;}
+.displacements3{ margin:20px 0 20px 15px; line-height:40px; letter-spacing: 3px; position:relative; font-size:1.25em; z-index:10;}
+.northern_location{ position:absolute; left:0px; top:200px;}
+.central_location{ position:absolute; left:0px; top:450px;}
+.southern_location{ position:absolute; right:85px; top:720px;}
+
+
+
+
+
+
+
+
+
+
+
+#footer{
+	line-height:1.25em;
+	background-color:#FBEDCA;
+	color:#071804;
+	text-align: center;
+	min-width:960px;
+	width:100%;
+	display: block;
+	margin:auto;
+	padding:0 3px;
+_background-repeat:repeat;
+*background-repeat:repeat;
+background-repeat:repeat \9;
+}
+#footer p a:hover{text-decoration: underline;}
+
+
+
+
+
+
+
+
+
+/*-------------------------籤頁CSS設定------------------------------------------------------*/
+.sign{ color:#FFF; font-size:2.01em; line-height:2.01em; font-weight:bold;font-family: "華康秀風體W3(P)";}
+#d1,#d2,#d3{ width:220px;}
+#d1:hover,#d2:hover,#d3:hover{
+	background-image:url(../images/about_images/line_mark2.png);
+    background-repeat:no-repeat;
+    background-position:bottom;
+}
+.ac{
+width:155px;
+height:48px;
+background-image:url(../images/about_images/line_mark.png);
+background-repeat:no-repeat;
+background-position:bottom;
+cursor:pointer;
+color:#FFFF00;
+}
+.in{cursor:pointer;}
+.la{width:100%; color:#FFF; font-family:"華康少女文字W5(P)"}
+/*-------------------------籤頁CSS設定------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-device-width: 768px) {
+.phone_f{ display:block;}/*footer斷行*/
+}

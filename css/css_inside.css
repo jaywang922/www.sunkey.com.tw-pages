@@ -1,0 +1,441 @@
+@charset "utf-8";
+*{margin:0; padding:0;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+img{border:0;}
+.cl{clear:both;}
+.warning{color:red;}
+a{
+  text-decoration:none; 
+  color:#000; 
+  outline: none; /* for Firefox Google Chrome  */
+  behavior:expression(this.onFocus=this.blur()); /* for IE */
+}
+a:hover{}
+
+body{
+	margin:0 auto;
+	font-size:100%;
+	line-height:1.125em;
+	position:relative;
+	font-family: Open Sans, Arial, Helvetica, sans-serif, 微軟正黑體;
+	background-color: #FFF;
+	background-image:url(../images/background.png);
+}
+
+
+#header{margin: auto;width: 960px; height:90px; position:relative;                    _height:100px;*height:100px;}
+#logo{
+	background-image: url(../images/Logo_.png);
+	background-repeat: no-repeat;
+	float: left;
+	height: 82px;
+	width: 249px;
+	position:absolute;
+	z-index:10;
+}
+#logo a{display:block;	height: 82px;	width: 249px;}
+#logo h2{	visibility: hidden;}
+
+
+
+.menu{
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	z-index: 1;
+}
+
+.m_li0,.m_li1,.m_li2,.m_li3,.m_li4,.m_li5 {	display: block; float:right;  margin:0 1px;}
+.m_li0 a p,.m_li1 a p,.m_li2 a p,.m_li3 a p,.m_li4 a p,.m_li5 a p { font-size:18px; font-weight:bold; line-height:28px; color:#414141;}
+
+.m_li0 a {
+	display: block;
+	background-image: url(../images/menu_00.png);
+	background-repeat:repeat-x;
+	background-color:#FFF;
+	height: 89px;
+	width: 110px;
+	padding-top:22px;
+
+-webkit-border-bottom-right-radius:40px; /*右下角*/
+-webkit-border-bottom-left-radius:40px; /*左下角*/
+border-bottom-left-radius:40px; /*左下角*/
+border-bottom-right-radius:40px; /*右下角*/
+border:solid #53A0CA 1px;	
+}
+.m_li1 a{
+	display: block;
+	background-image: url(../images/menu_01.png);
+	background-repeat:repeat-x;
+	background-color:#FFF;
+	height: 89px;
+	width: 110px;
+	padding-top:22px;
+
+-webkit-border-bottom-right-radius:25px; /*右下角*/
+-webkit-border-bottom-left-radius:25px; /*左下角*/
+border-bottom-left-radius:25px; /*左下角*/
+border-bottom-right-radius:25px; /*右下角*/	
+border:solid #CB7DA8 1px;		
+}
+.m_li2 a{
+	display: block;
+	background-image: url(../images/menu_02.png);
+	background-repeat:repeat-x;
+	background-color:#FFF;
+	height: 89px;
+	width: 110px;
+	padding-top:22px;
+
+-webkit-border-bottom-right-radius:25px; /*右下角*/
+-webkit-border-bottom-left-radius:25px; /*左下角*/
+border-bottom-left-radius:25px; /*左下角*/
+border-bottom-right-radius:25px; /*右下角*/	
+border:solid #A68040 1px;	
+}
+.m_li3 a{
+	display: block;
+	background-image: url(../images/menu_04.png);
+	background-repeat:repeat-x;
+	background-color:#FFF;
+	height: 89px;
+	width: 110px;
+	padding-top:22px;
+
+-webkit-border-bottom-right-radius:25px; /*右下角*/
+-webkit-border-bottom-left-radius:25px; /*左下角*/
+border-bottom-left-radius:25px; /*左下角*/
+border-bottom-right-radius:25px; /*右下角*/	
+border:solid #4DB37A 1px;
+}
+.m_li4 a{
+	display: block;
+	background-image: url(../images/menu_03.png);
+	background-repeat:repeat-x;
+	background-color:#FFF;
+	height: 89px;
+	width: 110px;
+	padding-top:22px;
+
+-webkit-border-bottom-right-radius:25px; /*右下角*/
+-webkit-border-bottom-left-radius:25px; /*左下角*/
+border-bottom-left-radius:25px; /*左下角*/
+border-bottom-right-radius:25px; /*右下角*/	
+border:solid #009997 1px;	
+}
+.m_li5 a{
+	display: block;
+	background-image: url(../images/menu_05.png);
+	background-repeat:repeat-x;
+	background-color:#FFF;
+	height: 89px;
+	width: 110px;
+	padding-top:22px;
+
+-webkit-border-bottom-right-radius:25px; /*右下角*/
+-webkit-border-bottom-left-radius:25px; /*左下角*/
+border-bottom-left-radius:25px; /*左下角*/
+border-bottom-right-radius:25px; /*右下角*/	
+border:solid #CEA5FF 1px;	
+}
+.m_li0 a:hover{
+	border-bottom-width: 3px;
+	border-bottom-style: solid;
+	border-bottom-color: #2b7daa;	
+}
+.m_li1 a:hover{
+	border-bottom-width: 3px;
+	border-bottom-style: solid;
+	border-bottom-color: #aa2b71;	
+}
+.m_li2 a:hover{
+	border-bottom-width: 3px;
+	border-bottom-style: solid;
+	border-bottom-color: #996000;		
+}
+.m_li3 a:hover{
+	border-bottom-width: 3px;
+	border-bottom-style: solid;
+	border-bottom-color: #009944;
+}
+.m_li4 a:hover{
+	border-bottom-width: 3px;
+	border-bottom-style: solid;
+	border-bottom-color: #009997;		
+}
+.m_li5 a:hover{
+	border-bottom-width: 3px;
+	border-bottom-style: solid;
+	border-bottom-color: #CEA5FF;
+}
+
+
+
+
+
+
+
+
+.top_bg{
+	background-image:url(../images/new_images/new_top_bg.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	margin-right: auto;
+	margin-left: auto;
+	height: 219px;
+	width: 960px;
+	position:absolute;
+	top:80px;
+	z-index:-100;
+_zoom:1;
+*zoom:1;
+_height: 0px;
+*height: 0px;
+}
+
+.topbg{
+	background-image: url(../images/new_images/new_bg_t.png);
+	background-repeat: repeat-x;
+	background-position:bottom;
+	width: 100%;
+	min-width: 960px;
+	height:113px;
+	margin:auto auto;
+}
+
+
+
+#contact_bg{background-image:url(../images/new_images/new_middle_bg.png);background-repeat: repeat-x;background-position: center center;background-color: #c2d1fb;	margin: auto;	width: 100%;min-width: 960px;
+animation: 8s bgbg infinite alternate-reverse;
+}
+#contact_bg a{ color:#09F; }
+@keyframes bgbg {
+  from {
+	  background-position:0 1%;
+  }
+  
+  to {
+	  background-position:1% 0;
+  }
+}
+
+
+
+/*降落傘效果*/
+.umbrella{ background:url(../images/new_images/umbrella.gif) no-repeat;width:129px; height:147px; position:absolute; left:15%; bottom:101%;
+animation: 35s umbrella infinite;
+}
+@keyframes umbrella {
+  from {
+	bottom:99%;
+  }   
+  to {
+    bottom:0%;
+  }
+}
+/*降落傘效果*/
+/*太陽效果*/
+.sun{ background:url(../images/sun.png) no-repeat;width:150px; height:149px; position:absolute; top:300px; right:8%;
+animation: 2s sun infinite;
+}
+@keyframes sun {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.25, 1.25, 1.25);
+    transform: scale3d(1.25, 1.25, 1.25);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+/*太陽效果*/
+
+#sort{	margin: auto; padding:20px 0 30px 0;	width: 960px;}
+#sort_block{float: left; width:110px;}
+#sort_block strong{	font-size:18px;	line-height: 36px; 
+text-shadow: #FFF 0px 2px, #FFF 2px 0px, #FFF -2px 0px, #FFF 0px -2px, #FFF -1.4px -1.4px, #FFF 1.4px 1.4px,  #FFF 1.4px -1.4px, #FFF -1.4px 1.4px; }/*選單文字標題*/
+.value_baritem{color: #FFF;background-color: #F00;font-weight: bold;text-align: center; padding:1px 0 1px 10px; height:31px; width:100%;}/*類別抬頭*/
+.value_none{ display:none;}
+.value_bar1{color: #FFF;background-color: #163cff;font-weight: bold;text-align: center; padding:5px 0 5px 10px; height:31px;width:100%;}/*消息*/
+.value_bar2{color: #333;background-color: #ffd816;font-weight: bold;text-align: center; padding:5px 0 5px 10px; height:31px;width:100%;}/*活動*/
+.value_bar3{color: #FFF;background-color: #007335;font-weight: bold;text-align: center; padding:5px 0 5px 10px; height:31px;width:100%;}/*商品*/
+.value_bardata{color: #000;background-color: #FFF;font-weight: bold;text-align: center; padding:5px 0 5px 0px; height:31px;width:100%;}/*日期抬頭*/
+.value_bar4{color: #000;background-color: #E7E7E7;font-weight: bold;text-align: center; padding:5px 0 5px 10px; height:31px;width:100%;}/*日期*/
+
+
+#contact{	margin: auto;	width: 960px; min-height:900px;}
+#contact_top{
+	margin: auto;
+	padding:0 30px;
+	background-color: #FFF;
+	line-height: 50px;
+	font-weight: bold;
+	text-align: right;
+	position:relative;
+-webkit-border-top-left-radius:10px; /*左上角*/
+-webkit-border-top-right-radius:10px; /*右上角*/
+border-top-left-radius:10px; /*左上角*/
+border-top-right-radius:10px; /*右上角*/
+}
+#contact_bottom{
+	height:50px;
+	margin: auto;
+	padding:0px 30px;
+	background-color: #FFF;
+	line-height: 50px;
+	text-align: center;
+	position:relative;
+-webkit-border-bottom-right-radius:10px; /*右下角*/
+-webkit-border-bottom-left-radius:10px; /*左下角*/
+border-bottom-left-radius:10px; /*左下角*/
+border-bottom-right-radius:10px; /*右下角*/
+}
+.switch_pages{	margin-right: 5px;	margin-left: 5px;	font-size: 0.75em;}
+.switch_pages a:hover{color: #00F;}
+.fs{position: static;	top: 10px; right: 30px; float:right; margin:0 30px;}
+
+#contact_info{
+	margin: auto;
+	padding:0 30px;
+	background-color: #FFF;
+	line-height: 30px;
+	text-align: left;
+	position:relative;
+}
+
+
+
+
+
+
+
+
+#doll{
+	background-image: url(../images/new_images/new_bottom_bg.png);
+	background-repeat: no-repeat;
+	margin:0 auto;
+	height: 210px;
+	width: 960px;
+}/*生活娃娃*/
+#lawn{
+	background-image: url(../images/new_images/new_bg_f.png);
+	background-repeat: repeat-x;
+	margin:0 auto;
+	height: 11px;
+	min-width:960px;
+	width:100%;
+}/*草地*/
+
+
+
+
+#footer{
+	line-height:1.25em;
+	background-color:#A9CA19;
+	color:#071804;
+	text-align: center;
+	min-width:960px;
+	display: block;
+	margin:auto;
+	padding:0 3px;
+_background-repeat:repeat;
+*background-repeat:repeat;
+background-repeat:repeat \9;
+}
+#footer p a:hover{text-decoration: underline;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*********************消息內容摺疊清單**************************/
+.blue{font-weight: bold; color: #FFF; background-color: #163cff; padding: 8px;}
+.yellow{font-weight: bold; color: #000; background-color: #ffd816; padding: 8px;}
+.green{font-weight: bold;	color: #FFF; background-color: #007335; padding: 8px;}
+.date{}
+
+ul, li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+#qaContent {
+	width: 100%;
+}
+#qaContent span {
+	height: 22px;
+	text-indent: 1px;
+}
+
+#qaContent ul.accordionPart {
+	margin: 0px 0px 0px 0px;
+}
+#qaContent ul.accordionPart li {
+	/*border-bottom: dashed 1px #e3e3e3;*/
+	padding: 6px 0 10px 0;
+}
+#qaContent ul.accordionPart li .qa_title {
+	color: #1186ec;
+	cursor: pointer;
+	background-image: url(../images/new_images/dashed.png);
+	background-position: 0% bottom;
+	background-repeat: repeat-x;
+	margin-bottom:10px;
+}
+#qaContent ul.accordionPart li .qa_title_on {
+	text-decoration: underline;
+
+}
+#qaContent ul.accordionPart li .qa_content {
+	margin: 6px 0;
+	padding: 0 2px;
+	color: #040404;
+}
+.hr_{
+	background-image: url(../images/new_images/dashed.png);
+	background-repeat: repeat-x;
+	height: 2px;
+	margin: 15px auto 10px auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-device-width: 768px) {
+.umbrella{ display:none}/*降落傘效果隱藏*/
+.phone_f{ display:block;}/*footer斷行*/
+}

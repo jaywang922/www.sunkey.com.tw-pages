@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8"> 
+<title>無標題文件</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  
+  
+<script>
+	$.ajax({
+ url: "news.html",
+ dataType:"html",
+ success: function(data) {   
+  $('#div_temp').html(data);
+	 var output01=  $('#div_temp').find('#newout01').html();
+	 var output02=  $('#div_temp').find('#newout02').html();
+	 var output03=  $('#div_temp').find('#newout03').html();
+	 var output04=  $('#div_temp').find('#newout04').html();
+	 var output05=  $('#div_temp').find('#newout05').html();
+	  $('#here01').html(output01);
+	  $('#here02').html(output02);
+	  $('#here03').html(output03);
+	  $('#here04').html(output04);
+	  $('#here05').html(output05);
+	 $('body').css('backgroundImage','url(images/bg00s.png)');
+	 $('.close_qa').hide();
+	 $('.qa_content').hide();
+
+	 $('div').css('margin-top','10px');
+	
+	 $('.qa_title').css({'margin-top':'-15px','margin-left':'30%',height:'20px','padding':'2px',width:"600px"});
+	$('.qa_title').mouseenter(function(){
+         $(this).css("background-color", "rgba(0,0,0,0.2)");
+    });
+	 
+    $('.qa_title').mouseleave(function(){
+         $(this).css("background-color", "transparent");
+    });
+	 
+	 
+	 
+	  
+	 $('.qa_title').click(function(){
+		var t=$(this).text(); 
+		var search=$(this).parent().closest('ul').html();
+		 $('#showtitle').html(t);
+		 $('.modal-body').html(search).find('.qa_content').show();
+		 $('.modal-body').find('.qa_title').hide();
+		 $('.qa_content').find('img').css('max-width','100%');
+		 
+	 })
+	  /*$('.qa_title').click(function(){
+	 $(this).next('div.qa_content').slideToggle();
+		}).siblings('div.qa_content').hide();
+
+		// 關閉紐
+		$('#qaContent .close_qa').click(function(){
+			$(this).parents('.qa_content').prev().click();
+			return false;
+		});*/
+ 
+	 
+	 
+ }
+		
+}); 
+	</script>
+	<style>
+		html{height:100%;}
+	body{height:100%;}
+		section div{font-size:16px;font-weight: 600;cursor: pointer;}
+		section div p{font-size:20px;font-weight: 300;color: aliceblue;line-height:20px;
+	</style>
+	
+
+</head>
+
+<body>
+
+<div id="div_temp" style="display:none;"></div>
+
+<section style="margin-top:-10px;width:960px;margin:0 auto;background: white;height:300px;">
+<div id="here01"  data-toggle="modal" data-target="#myModal" style="width:100%;border-bottom:1px solid #B8B8B8;height:40px;color:black;float:left;"></div>
+<div id="here02"  data-toggle="modal" data-target="#myModal" style="width:100%;border-bottom:1px solid #B8B8B8;height:40px;color:black;float:left;"></div>
+<div id="here03" data-toggle="modal" data-target="#myModal" style="width:100%;border-bottom:1px solid #B8B8B8;height:40px;color:black;float:left;"></div>
+<div id="here04"  data-toggle="modal" data-target="#myModal" style="width:100%;border-bottom:1px solid #B8B8B8;height:40px;color:black;float:left;"></div>
+<div id="here05"  data-toggle="modal" data-target="#myModal" style="width:100%;border-bottom:1px solid #B8B8B8;height:40px;color:black;float:left;"></div>
+<a href="news.html"><div id="here05" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal" style="width:100%;border-bottom:1px solid #B8B8B8;height:40px;color:black;float:left;"><p>更多..</p></div></a>
+</section>
+
+
+  <!---
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+          <p>Some text in the modal.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>-->
+
+</body>
+</html>

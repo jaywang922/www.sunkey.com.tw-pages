@@ -1,0 +1,215 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>中獎名單</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css); </style>
+<link rel="stylesheet" href="../2017ghostfestival/css/winner.css">
+<link rel="stylesheet" href="../2017ghostfestival/css/font-awesome.min.css">
+   <link rel="stylesheet" href="../2017ghostfestival/css/font-awesome-ie7.min.css">
+    <link rel="stylesheet" type="text/css" href="../../css/animate.css">
+    <script>
+	(function($){ 
+ if($(window).width()<780){
+	 
+	 alert('點選確定後，進入查詢畫面');
+ }
+})(jQuery); 
+	
+	</script>
+</head>
+<body>
+
+<body>
+<script>
+
+	function alertwords(){
+		
+		alert("目前尚未公布")
+		return false;
+	}
+	</script>
+<div id="secondlayer" class="animated slideInLeft" >
+
+<a href="#" id="closemenu" style="float: left; margin-top:40%; margin-left: 15%;"><i class="icon-remove-sign"></i></a>
+
+<ul> 
+
+ <h2>生活飲料</h2>
+  <a href="../2017ghostfestival/index.html"><li><i class="icon-flag-alt "></i> 活動說明</li></a>
+  <a href="../2017ghostfestival/invoice.php"><li><i class="icon-archive"></i> 登錄抽獎</li></a>
+  <a href="../2017ghostfestival/winner.html"><li><i class="icon-calendar-empty"></i> 中獎名單</li></a>
+  <a href="../2017ghostfestival/wheretobuy.html"><li><i class="icon-zoom-in"></i> 哪裡購買</li></a>
+  <a href="https://www.facebook.com/nulife.bubble/"><li><i class="icon-facebook-sign"></i> 生活飲料粉絲團</li></a>
+  
+</ul>
+	<script>	
+	$(document).ready(function(){
+		$("#menu").click(function(){
+		$("#underlayer").css("display","block");
+		$("#secondlayer").css("display","block");
+			
+			
+		})
+		
+	});	
+		
+		
+		
+		
+		
+	$(document).ready(function(){
+	
+		
+    $("ul li").hover(function(){
+        $(this).animate({opacity: '0.5'});
+        }, function(){
+        $(this).animate({opacity: '1'});
+    });
+});
+		
+	$(document).ready(function(){
+		$("#underlayer").click(function(){
+		$(this).css("display","none");
+		$("#secondlayer").hide();
+			
+		});
+		
+		$("#read").click(function(){
+		$("#underlayer").css("display","none");
+		$("#secondlayer").hide();
+			
+		});
+	});
+		
+		
+	$(document).ready(function(){
+		$("#closemenu").click(function(){
+		$("#underlayer").css("display","none");
+		$("#secondlayer").hide();
+			
+		});
+		
+		
+	});
+		
+	</script>
+	
+</div>
+
+
+
+
+
+<div id="box"><img src="images/prize_title.jpg" alt="winnertitle" id="winnertitle">
+  <div class="container" id="information">
+  <a href="2023ghostfestival_award.pdf" download><button class="btn btn-danger" style="font-family:'Noto Sans TC', sans-serif;font-size:20px;margin-bottom: 8px; ">下載領獎確認書</button></a>
+	<div class="table-responsive" id="paper">
+<table width="599" class="table" >
+			<thead>
+			                          
+                <tr>
+					<th width="533" style="border-bottom:1px solid #C78F1E">請輸入手機號碼查詢(09XX-XXXXXX)：</th>
+				</tr>
+			</thead>
+			<tbody>
+
+			<tr>
+			  <td><script type="text/javascript">
+        function showHint(str) {
+            var xmlhttp;
+
+            if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
+                xmlhttp = new XMLHttpRequest();
+            }
+            else {// code for IE6, IE5
+                xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+            }
+            xmlhttp.onreadystatechange = function () {
+                if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                    var result = xmlhttp.responseText;
+                    var obj = JSON.parse(result);//解析json字串為json物件形式
+
+                    var html = '<table border=1 width=100%>';//
+
+                    for (var i = 0; i < obj.length; i++) {//
+                        html += '<tr>';//
+                        for (j = 0; j < obj[i].data.length; j++) {
+                            html += '<td>' + obj[i].data[j] + '</td>';
+                        }
+                        html += '</tr>';
+                    }
+                    html += "</table>";
+
+                    document.getElementById("order_status").innerHTML = html;
+                    if (obj.length == 1) //只有一筆代表查不到資料
+                        alert('查無中獎資料，謝謝您參加本活動!! 敬請期待下一次相遇  ');
+                }
+
+            }
+            var url = "https://script.google.com/macros/s/AKfycbzdXZEe2gsFCRDcOjh6jnY8S236KtPDIyOw3DI6dMRY7mXqe2tCW54BeoE_EuByhEQE6A/exec";
+            xmlhttp.open("get", url + "?uid=" + encodeURIComponent(str), true);
+            xmlhttp.send();
+        }
+    </script>
+			    </head>
+			    
+			    <body>
+			    
+			    <!--請輸入手機號碼查詢(09XX-XXXXXX)：--><P><input type="text" id="uid" />
+			      <input type="button" name="inq" value="查詢" onClick="showHint(uid.value);"></br>
+			      
+		      <span id="order_status"></span></td>
+			  </tr>
+				
+			</tbody>
+            
+            
+            
+			<div id="demo"></div>
+		</table>
+        			<table width="100%"><tr>
+			  <td width="27%" rowspan="5" valign="top">領獎說明</td>
+			  <td colspan="3" align="left">
+              <p align="left">▐ 
+中獎名單公布官網［最新消息］及FB粉絲團。</td>
+                      <tr>
+<td width="23%" align="left">名單公告時間</td>
+<td width="26%" align="left">回函寄回時間</td>
+<tr>
+  <td align="left">2023/10/17</td>
+  <td align="left">2023/11/20前</td>
+<tr>
+<tr>
+<p></p>
+<td colspan="3" align="left"><p align="left">▐ 中獎者請依<font color="#FF0000">指定時間</font>前將「身分證-正反面影本」、「得獎發票正本」寄至<strong>台北市中山區南京東路三段28號12樓「生活中元獎澎湃」活動小組收（以郵戳為憑</strong>）。如於兌獎期限前，未提供上述完整的兌獎資料，則視同放棄中獎資格。<BR>
+  <B>*若是以電子發票登錄，請提供手機載具之證明截圖(<a href="https://www.facebook.com/nulife.bubble/posts/pfbid0vpX5Sua6ECdUnfjQsrimDSSVc6qBTsYTgjLH9gDr2yr5Mg4QWxvhSjfaCpt2eA95l" target="_blank">如何下載</a>)。 </B></p>
+<p></p>
+<p align="left">▐ 主辦單位將依據所有中獎者寄回資料進行核對、聯繫，確認無誤後，將於2023/11/20前將獎項寄出（活動獎項以實際出為準，如有調整則不另行通知）。獎項寄送地址以中獎人線上填寫之個人資料（姓名、聯絡電話、聯絡地址）為準，若因回函資料不齊全，以致無法寄送獎項，視為自動放棄且活動單位恕不負責。</font></p></td>
+	                  <tr>
+			  <td width="27%" valign="top">注意事項</td>
+			  <td colspan="3" align="left">
+			   <p align="left">▐ <font color="#FF0000">參加資格需購買生活飲料全系列產品單筆滿百元,請務必保留所登錄序號「發票正本」，以供活動兌獎之用；如是使用「手機載具」需提供線上查詢頁面截圖。若無法提供發票正本或是載具資料，視同放棄中獎資格。</font></p><p></p>
+			   <p align="left">▐ 任何因電腦、網路、電話、技術或不可究責於主辦單位之事由，而使寄送得獎人之獎品有延遲、遺失、錯誤、無法辨識或毀損之情況，主辦單位概不負責，參加者視同放棄中獎資格亦不得因此異議。 </p><p></p>
+			   <p align="left">▐ 本活動參加資格與獎項提供對象僅限居住在中華民國台澎金馬地區之居民，本活動主辦單位及相關協辦、合作單位員工無參加本活動之權利。<font color="#FF0000">依財政部規定，因申報各類所得之需，中獎金額超過NT＄20,000元者，須繳交獎品10%機會中獎稅及身分證影本</font>。中華民國國境內居住之國人(即在中華民國境內居住未達183天之本國人)不論得獎人所得之金額，需就中獎所得扣繳20%機會中獎稅。 </p><p></p>
+			   <p align="left">▐ 如本活動參加者不及贈品數量，主辦單位保留隨時修改獎品數量內容之權利，不遞補缺額；如原定獎項因不可抗拒之因素無法提供，將由主辦單位另以同等值之贈品取代之。如有任何變更內容或詳細注意事項將公佈於活動官網，恕不另行通知。</p><p></p>
+			   <p align="left">▐ 如本活動參加者不及贈品數量，主辦單位保留隨時修改獎品數量內容之權利，不遞補缺額；如原定獎項因不可抗拒之因素無法提供，將由主辦單位另以同等值之贈品取代之。如有任何變更內容或詳細注意事項將公佈於活動官網，恕不另行通知。 </p></td>
+			  </tr>
+              </table>
+        
+    </div>
+</div>
+<footer>
+  <div style="background: #FB7C1A;padding:10px;">
+    <p>電話：0800-780-780 Copyright © 2023 SUNKEY TECHNOLOGIES CORPORATION . All Rights Reserved .</p></div>
+	
+</footer>
+</div>
+
+</body>
+</html>
