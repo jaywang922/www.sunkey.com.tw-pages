@@ -1,0 +1,41 @@
+@charset "utf-8";
+/* CSS Document */
+body{width:100%; height:100%;background:#f39800;}
+
+#mainarea{
+	width:100%; 
+	
+position:absolute;
+	z-index: 0;	
+	top:0px;
+	
+}
+
+#mainpic{ max-width: 100%;
+    		height: auto;
+			margin: 0 auto;
+			display:block; 
+	
+	
+}
+#maintitle{position:relative;
+	z-index: 1;
+	width:100%;
+	height:100%;
+	margin-top:80px;
+}
+
+#maintitlepic{max-width: 100%;
+    		height: auto;
+			margin:0 auto;
+			display:block;
+	animation-duration: 1s;
+	animation-iteration-count:2;
+	animation-delay: 1s;
+	 
+}
+
+#bottompic img{max-width: 100%;
+    		height: auto;}
+#luckygo{display:block; margin:0 auto;max-width: 100%;
+    		height: auto;}
