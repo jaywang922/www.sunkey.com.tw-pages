@@ -1,0 +1,456 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>中獎名單</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css); </style>
+<link rel="stylesheet" href="../2024summer/css/winner.css">
+<link rel="stylesheet" href="../2017ghostfestival/css/font-awesome.min.css">
+   <link rel="stylesheet" href="../2017ghostfestival/css/font-awesome-ie7.min.css">
+    <link rel="stylesheet" type="text/css" href="../../css/animate.css">
+    <script>
+	(function($){ 
+ if($(window).width()<780){
+	 
+	 alert('點選確定後，進入查詢畫面');
+ }
+})(jQuery); 
+	
+	</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body {
+	background-color: #ebda68;
+}
+</style>
+</head>
+<body>
+
+<body>
+<script>
+
+	function alertwords(){
+		
+		alert("目前尚未公布")
+		return false;
+	}
+	</script>
+<div id="secondlayer" class="animated slideInLeft" >
+
+<a href="#" id="closemenu" style="float: left; margin-top:40%; margin-left: 15%;"><i class="icon-remove-sign"></i></a>
+
+<ul> 
+
+ <h2>生活飲料</h2>
+  <a href="../2017ghostfestival/index.html"><li><i class="icon-flag-alt "></i> 活動說明</li></a>
+  <a href="../2017ghostfestival/invoice.php"><li><i class="icon-archive"></i> 登錄抽獎</li></a>
+  <a href="../2017ghostfestival/winner.html"><li><i class="icon-calendar-empty"></i> 中獎名單</li></a>
+  <a href="../2017ghostfestival/wheretobuy.html"><li><i class="icon-zoom-in"></i> 哪裡購買</li></a>
+  <a href="https://www.facebook.com/nulife.bubble/"><li><i class="icon-facebook-sign"></i> 生活飲料粉絲團</li></a>
+  
+</ul>
+	<script>	
+	$(document).ready(function(){
+		$("#menu").click(function(){
+		$("#underlayer").css("display","block");
+		$("#secondlayer").css("display","block");
+			
+			
+		})
+		
+	});	
+		
+		
+		
+		
+		
+	$(document).ready(function(){
+	
+		
+    $("ul li").hover(function(){
+        $(this).animate({opacity: '0.5'});
+        }, function(){
+        $(this).animate({opacity: '1'});
+    });
+});
+		
+	$(document).ready(function(){
+		$("#underlayer").click(function(){
+		$(this).css("display","none");
+		$("#secondlayer").hide();
+			
+		});
+		
+		$("#read").click(function(){
+		$("#underlayer").css("display","none");
+		$("#secondlayer").hide();
+			
+		});
+	});
+		
+		
+	$(document).ready(function(){
+		$("#closemenu").click(function(){
+		$("#underlayer").css("display","none");
+		$("#secondlayer").hide();
+			
+		});
+		
+		
+	});
+		
+	</script>
+	
+</div>
+
+
+
+
+
+<div id="box"><img src="images/prize_title.jpg" alt="winnertitle" id="winnertitle">
+  <div class="container" id="information">
+  <a href="2026Q3__award.pdf" download><button class="btn btn-danger" style="font-family:'Noto Sans TC', sans-serif;font-size:20px;margin-bottom: 8px; ">下載領獎確認書</button></a>
+	<div class="table-responsive" id="paper">
+<table width="599" class="table" >
+			<thead><!--
+			                          
+                <tr>
+					<th width="533" style="border-bottom:1px solid #C78F1E">請輸入手機號碼查詢(09XX-XXXXXX)：</th>
+				</tr>
+			</thead>
+			<tbody>
+
+			<tr>
+			  <td><script type="text/javascript">
+        function showHint(str) {
+            var xmlhttp;
+
+            if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
+                xmlhttp = new XMLHttpRequest();
+            }
+            else {// code for IE6, IE5
+                xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+            }
+            xmlhttp.onreadystatechange = function () {
+                if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                    var result = xmlhttp.responseText;
+                    var obj = JSON.parse(result);//解析json字串為json物件形式
+
+                    var html = '<table border=1 width=100%>';//
+
+                    for (var i = 0; i < obj.length; i++) {//
+                        html += '<tr>';//
+                        for (j = 0; j < obj[i].data.length; j++) {
+                            html += '<td>' + obj[i].data[j] + '</td>';
+                        }
+                        html += '</tr>';
+                    }
+                    html += "</table>";
+
+                    document.getElementById("order_status").innerHTML = html;
+                    if (obj.length == 1) //只有一筆代表查不到資料
+                        alert('查無中獎資料，謝謝您參加本活動!! 敬請期待下一次相遇  ');
+                }
+
+            }
+                        var url = "https://script.google.com/macros/s/AKfycbzGaayPQ_usmpQi5JC3s7HAFnT4EiOnsaDRsRUhvQ9GFWBsDa023MHscXZfQz8LHb8O/exec";
+            xmlhttp.open("get", url + "?uid=" + encodeURIComponent(str), true);
+            xmlhttp.send();
+        }
+    </script>
+			    </head>
+			    
+			    <body>
+			    
+			    <!--請輸入手機號碼查詢(09XX-XXXXXX)：<P><input type="text" id="uid" />
+			      <input type="button" name="inq" value="查詢" onClick="showHint(uid.value);"></br>
+			      
+		      <span id="order_status"></span></td>
+			  </tr>
+				
+			</tbody>-->
+            
+            
+            
+		<div id="demo"></div>
+		</table>
+        			<table width="100%"><tr>
+			  <td width="30%" rowspan="5" valign="top">領獎說明</td>
+			  <td colspan="3" align="left">
+              <p align="left">▐ 
+中獎名單公布官網［最新消息］及FB粉絲團。</td>
+ <tr>
+<td align="left">名單公告時間</td>
+<td align="left">回函寄回時間</td>
+ <tr>
+<td width="44%" align="left"><p>2026/09/10</p></td>
+<td width="42%" align="left">2026/09/30前</td>
+<tr>
+<tr>
+<p></p>
+<td colspan="3" align="left"><div>
+  <p><strong>［！］如填寫有誤，無法完成核對，造成獎項無法送達，恕不補寄。</strong></p>
+  <p><strong>［！］</strong><strong>提供的</strong><strong>領獎文件需為本人資料，以避免未來雙方領獎認知差異，故怒不開放代領。</strong></p>
+</div>
+  <div></div>
+  <p align="left">▐▶ 中獎者請依<font color="#FF0000">指定時間</font>前將「身分證-正反面影本」、「得獎發票正本」、「領獎確認書」寄至<strong>台北市中山區南京東路三段28號12樓「吸旺中大獎」活動小組收（以郵戳為憑</strong>）。如於兌獎期限前，<U>未提供上述完整的兌獎資料，則視同放棄中獎資格且不另行通知</U>。<B>*若是以電子發票登錄，請提供手機載具之證明截圖(<a href="https://www.facebook.com/nulife.bubble/posts/pfbid0vpX5Sua6ECdUnfjQsrimDSSVc6qBTsYTgjLH9gDr2yr5Mg4QWxvhSjfaCpt2eA95l" target="_blank">如何下載</a>)。 </B></p>
+<p></p>
+<p align="left">▐▶ 主辦單位將依據所有中獎者寄回資料進行核對，確認無誤後，將於2026/10/20前將獎項寄出（活動獎項以實際出為準，如有調整則不另行通知）。獎項寄送地址以中獎人線上填寫之個人資料（姓名、聯絡電話、聯絡地址）為準，若因回函資料不齊全，以致無法寄送獎項，視為自動放棄且活動單位恕不負責。</font></p></td>
+	                  <tr>
+			  <td width="14%" valign="top">注意事項</td>
+
+			  <td colspan="3" align="left">
+			   <p align="left">▐▶ <font color="#FF0000">參加資格需購買生活飲料全系列產品（不限品項／金額），請務必保留所登錄序號「發票正本」及「銷貨明細」，以供活動兌獎之用；如是使用「手機載具」需提供線上查詢頁面截圖。若無法提供發票正本或是載具資料，視同放棄領獎資格。</font></p><p></p>
+			   <p align="left">▐▶ 任何因電腦、網路、電話、技術或不可究責於主辦單位之事由，而使寄送得獎人之獎品有延遲、遺失、錯誤、無法辨識或毀損之情況，主辦單位概不負責，參加者視同放棄中獎資格亦不得因此異議。 </p><p></p>
+			   <p align="left">▐▶ 本活動參加資格與獎項提供對象僅限居住在中華民國台澎金馬地區之居民，本活動主辦單位及相關協辦、合作單位員工無參加本活動之權利。</p><p></p>
+			   <p align="left">▐▶ <font color="#FF0000">依財政部規定，因申報各類所得之需，中獎金額超過NT＄20,000元者，須繳交獎品10%機會中獎稅及身分證影本</font>。中華民國國境內居住之國人(即在中華民國境內居住未達183天之本國人)不論得獎人所得之金額，需就中獎所得扣繳10%機會中獎稅。 </p>
+			   <p></p>
+			   <p align="left">▐▶ 如本活動參加者不及贈品數量，主辦單位保留隨時修改獎品數量內容之權利，不遞補缺額；如原定獎項因不可抗拒之因素無法提供，將由主辦單位另以同等值之贈品取代之。如有任何變更內容或詳細注意事項將公佈於活動官網，恕不另行通知。</p><p></p>
+</td>
+			  </tr>
+	                  <tr>
+	                    <td valign="top">得獎名單</td>
+	                    <td colspan="3" align="left"><table width="452" cellpadding="0" cellspacing="0">
+	                      <col width="107">
+	                      <col width="80" span="3">
+	                      <tr>
+	                        <td colspan="4"><div align="center"><strong>［首獎］iPhone 18 Pro 256GB *不限色(1名)</strong></div></td>
+                          </tr>
+	                      <tr>
+	                        <td colspan="2"><div align="right">UV01583815</div></td>
+	                        <td colspan="2"><div align="left"></div></td>
+                          </tr>
+	                      <tr>
+	                        <td colspan="4"><div align="center"><strong>［頭獎］recolte麗克特Cordless Bonne無線萬用調理機 RCP-7 *不限色(5名)</strong></div></td>
+                          </tr>
+	                      <tr>
+	                        <td colspan="2"><div align="right">CP15992851	<br>
+	                        </div></td>
+	                        <td colspan="2"><div align="left">(0902****65)</div></td>
+                          </tr>
+	                      <tr>
+	                        <td colspan="2"><div align="right">CM21423868<br>
+	                        </div></td>
+	                        <td colspan="2"> <div align="left">(0906****95)</div></td>
+                          </tr>
+	                      <tr>
+	                        <td colspan="2"><div align="right">CJ64720580<br>
+	                        </div></td>
+	                        <td colspan="2"><div align="left">(0956****67)</div></td>
+                          </tr>
+	                      <tr>
+	                        <td colspan="2"><div align="right">CH73618278<br>
+	                        </div></td>
+	                        <td colspan="2"><div align="left">(0985****52)</div></td>
+                          </tr>
+	                      <tr>
+	                        <td colspan="2"><div align="right">DL37152356</div></td>
+	                        <td colspan="2"><div align="left">(0983****59)</div></td>
+                          </tr>
+	                      <tr>
+	                        <td colspan="4"><div align="center"><strong>［一獎］Giaretti義大利珈樂堤熱壓吐司機*不限色(10名
+                            )</strong></div></td>
+                          </tr>
+	                      <tr>
+	                        <td width="95">CK62400580</td>
+	                        <td width="76">(0932****32)</td>
+	                        <td width="95">CL04528297</td>
+	                        <td width="76">(0953****53)</td>
+                          </tr>
+                           <tr>
+                             <td>CJ55045680</td>
+                             <td>(0963****63)</td>
+                             <td>DT44641573</td>
+                             <td>(0958****58)</td>
+                          </tr>
+                           <tr>
+                             <td>CZ52308263</td>
+                             <td>(0963****63)</td>
+                             <td>CR32901534</td>
+                             <td>(0906****06)</td>
+                          </tr>
+	                      <tr>
+	                        <td>CZ95135655</td>
+	                        <td>(0988****88)</td>
+	                        <td>CS92794828</td>
+	                        <td>(0955****55)</td>
+                          </tr>
+	                      <tr>
+	                        <td>CK59168867</td>
+	                        <td>(0919****19)</td>
+	                        <td>CK63322237</td>
+	                        <td>(0912****12)</td>
+                          </tr>
+	                      <tr>
+	                        <td colspan="4"><div align="center"><strong>［二獎］生活飲料一箱(不限規格&口味)(50名)</strong></div></td>
+                          </tr>
+	                      <tr>
+	                        <td width="113">CT05231640</td>
+	                        <td width="115">(0963****63)</td>
+	                        <td width="127">CY15098884</td>
+	                        <td width="95">(0906****62)</td>
+                          </tr>
+	                      <tr>
+	                        <td>CJ63579619</td>
+	                        <td>(0987****72)</td>
+	                        <td>DN46910815</td>
+	                        <td>(0955****41)</td>
+                          </tr>
+	                      <tr>
+	                        <td>CS58533359</td>
+	                        <td>(0986****10)</td>
+	                        <td>CK19064242</td>
+	                        <td>(0954****53)</td>
+                          </tr>
+	                      <tr>
+	                        <td>DC71050378</td>
+	                        <td>(0930****08)</td>
+	                        <td>CZ75846932</td>
+	                        <td>(0976****79)</td>
+                          </tr>
+	                      <tr>
+	                        <td>CP32786378</td>
+	                        <td>(0917****45)</td>
+	                        <td>CH75657108</td>
+	                        <td>(0931****13)</td>
+                          </tr>
+	                      <tr>
+	                        <td>CM16191886</td>
+	                        <td>(0937****75)</td>
+	                        <td>CW21871106</td>
+	                        <td>(0963****81)</td>
+                          </tr>
+	                      <tr>
+	                        <td>CS30386991</td>
+	                        <td>(0952****85)</td>
+	                        <td>DC82558733</td>
+	                        <td>(0932****87)</td>
+                          </tr>
+	                      <tr>
+	                        <td>CW92175586</td>
+	                        <td>(0935****70)</td>
+	                        <td>CS20387519</td>
+	                        <td>(0910****36)</td>
+                          </tr>
+	                      <tr>
+	                        <td>CH78955369</td>
+	                        <td>(0978****82)</td>
+	                        <td>CH91688188</td>
+	                        <td>(0911****88)</td>
+                          </tr>
+	                      <tr>
+	                        <td>CX95434739</td>
+	                        <td>(0935****79)</td>
+	                        <td>CK68618233</td>
+	                        <td>(0903****21)</td>
+                          </tr>
+	                      <tr>
+	                        <td>DN37466704</td>
+	                        <td>(0952****96)</td>
+	                        <td>DC81169393</td>
+	                        <td>(0963****14)</td>
+                          </tr>
+	                      <tr>
+	                        <td>CP16589454</td>
+	                        <td>(0907****54)</td>
+	                        <td>CM08001673</td>
+	                        <td>(0988****51)</td>
+                          </tr>
+	                      <tr>
+	                        <td>AZ78694218</td>
+	                        <td>(0931****30)</td>
+	                        <td>CR22852067</td>
+	                        <td>(0966****38)</td>
+                          </tr>
+	                      <tr>
+	                        <td>CZ45171693</td>
+	                        <td>(0928****89)</td>
+	                        <td>CW93621362</td>
+	                        <td>(0978****66)</td>
+                          </tr>
+	                      <tr>
+	                        <td>CS18782056</td>
+	                        <td>(0958****30)</td>
+	                        <td>Cp27080007</td>
+	                        <td>(0985****23)</td>
+                          </tr>
+	                      <tr>
+	                        <td>CD50063642</td>
+	                        <td>(0921****48)</td>
+	                        <td>CS25552001</td>
+	                        <td>(0937****16)</td>
+                          </tr>
+	                      <tr>
+	                        <td>DH89009093</td>
+	                        <td>(0912****03)</td>
+	                        <td>CJ62660984</td>
+	                        <td>(0919****11)</td>
+                          </tr>
+	                      <tr>
+	                        <td>CH82960615</td>
+	                        <td>(0937****84)</td>
+	                        <td>CJ72356537</td>
+	                        <td>(0971****33)</td>
+                          </tr>
+	                      <tr>
+	                        <td>CS54198174</td>
+	                        <td>(0978****52)</td>
+	                        <td>CK85369590</td>
+	                        <td>(0952****12)</td>
+                          </tr>
+	                      <tr>
+	                        <td>CH88613616</td>
+	                        <td>(0955****12)</td>
+	                        <td>DD98401676</td>
+	                        <td>(0972****83)</td>
+                          </tr>
+	                      <tr>
+	                        <td>CZ38032849</td>
+	                        <td>(0920****39)</td>
+	                        <td>CD26368077</td>
+	                        <td>(0906****95)</td>
+                          </tr>
+	                      <tr>
+	                        <td>CZ75142640</td>
+	                        <td>(0928****43)</td>
+	                        <td>CU85493105</td>
+	                        <td>(0963****40)</td>
+                          </tr>
+	                      <tr>
+	                        <td>CK70835293</td>
+	                        <td>(0962****87)</td>
+	                        <td>DN37224442</td>
+	                        <td>(0977****73)</td>
+                          </tr>
+	                      <tr>
+	                        <td>CJ72229870</td>
+	                        <td>(0917****27)</td>
+	                        <td>CS62971041</td>
+	                        <td>(0937****64)</td>
+                          </tr>
+	                      <tr>
+	                        <td>CS79850452</td>
+	                        <td>(0970****79)</td>
+	                        <td>CS68104080</td>
+	                        <td>(0963****17)</td>
+                          </tr>
+                        </table></td>
+                      </tr>
+              </table>
+        
+    </div>
+</div>
+<footer>
+  <div style="background: #ffdf01;padding:10px;">
+    <p>電話：0800-780-780 Copyright © 2026 SUNKEY TECHNOLOGIES CORPORATION . All Rights Reserved .</p></div>
+	
+</footer>
+</div>
+
+</body>
+</html>
